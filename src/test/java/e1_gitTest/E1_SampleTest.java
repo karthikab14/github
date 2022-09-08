@@ -24,5 +24,28 @@ public class E1_SampleTest {
 	FileHandler.copy(src, new File("D:\\surya\\E1_GitTest\\Screenshot\\GitHubTest.png"));
     driver.close();
 	}
+	@Test(priority=1,enabled=false)
+	public void mul()
+	{
+		System.out.println("mul");
+	}
+	@Test(priority=0)
+	public void add()
+	{
+		System.out.println("Add");
+	}
+	@Test(priority=3)
+	public void sub()
+	{
+		System.out.println("sub");
+	}
+	@Test(priority=-1)
+	public void per()
+	{
+		System.out.println("per");
+	}
+
+}
+
 
 }
